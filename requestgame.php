@@ -1,7 +1,7 @@
 <?php
 
-ini_set('display_startup_errors',1);
-ini_set('display_errors',1);
+ini_set('display_startup_errors', 1);
+ini_set('display_errors', 1);
 error_reporting(-1);
 
 $username = $_GET['username'];
@@ -9,7 +9,8 @@ $password = $_GET['password'];
 $challenged = $_GET['challenged'];
 $difficulty = $_GET['difficulty'];
 
-function checkValidity($str){
+function checkValidity($str)
+{
     if (!empty($str)) {
         if (strlen($str) > 5 && strlen($str) < 16) {
             return true;
@@ -18,7 +19,7 @@ function checkValidity($str){
     return false;
 }
 
-if($difficulty == "0" || $difficulty == "1") {
+if ($difficulty == "0" || $difficulty == "1") {
     if (checkValidity($username) && checkValidity($password)) {
         $PDO = new PDO('mysql:host=localhost;dbname=patterns', 'root', 'password');
         $sql = "select * from users where username=:username and password=:password";
@@ -44,8 +45,8 @@ if($difficulty == "0" || $difficulty == "1") {
 
                 for ($count = 0; $count != 16; $count++) {
                     $set = false;
-                    while($set == false) {
-                        if($array[$pointerX][$pointerY] == 0) {
+                    while ($set == false) {
+                        if ($array[$pointerX][$pointerY] == 0) {
                             $array[$pointerX][$pointerY] = $count;
                             $set = true;
                         } else {
@@ -83,11 +84,69 @@ if($difficulty == "0" || $difficulty == "1") {
                     }
                 }
 
-                for ($i = 0; $i != 4; $i++) {
-                    for ($j = 0; $j != 4; $j++) {
-                        print (string) $array[$i][$j] . " ";
+                $scrambler = ($difficulty == "0" ? 50 : 10000);
+
+                function getEmptySlotX($array) {
+                    for ($i = 0; $i != 4; $i++) {
+                        for ($j = 0; $j != 4; $j++) {
+                            if ($array[$i][$j] == 0) {
+                                return $i;
+                            }
+                        }
+                    }
+                    return 0;
+                }
+
+                function getEmptySlotY($array) {
+                    for ($i = 0; $i != 4; $i++) {
+                        for ($j = 0; $j != 4; $j++) {
+                            if ($array[$i][$j] == 0) {
+                                return $j;
+                            }
+                        }
+                    }
+                    return 0;
+                }
+
+                for ($i = 0; $i != $scrambler; $i++) {
+                    $rand = rand(0, 3);
+                    $emptyX = getEmptySlotX($array);
+                    $emptyY = getEmptySlotY($array);
+                    switch ($rand) {
+                        case 0:
+                            if ($emptyY != 3) {
+                                $array[$emptyX][$emptyY] = $array[$emptyX][$emptyY + 1];
+                                $array[$emptyX][$emptyY + 1] = 0;
+                            }
+                            break;
+                        case 1:
+                            if ($emptyY != 0) {
+                                $array[$emptyX][$emptyY] = $array[$emptyX][$emptyY - 1];
+                                $array[$emptyX][$emptyY - 1] = 0;
+                            }
+                            break;
+                        case 2:
+                            if ($emptyX != 0) {
+                                $array[$emptyX][$emptyY] = $array[$emptyX - 1][$emptyY];
+                                $array[$emptyX - 1][$emptyY] = 0;
+                            }
+                            break;
+                        case 3:
+                            if ($emptyX != 3) {
+                                $array[$emptyX][$emptyY] = $array[$emptyX + 1][$emptyY];
+                                $array[$emptyX + 1][$emptyY] = 0;
+                            }
+                            break;
                     }
                 }
+
+                /* $str = "";
+                for ($i = 0; $i != 4; $i++) {
+                    for ($j = 0; $j != 4; $j++) {
+                        $str .= ($array[$j][$i] . " ");
+                    }
+                }
+                print $str; */
             } else {
                 print 'false - invalid invitation';
             }
