@@ -140,13 +140,55 @@ if ($difficulty == "0" || $difficulty == "1") {
                     }
                 }
 
-                /* $str = "";
+                $str = "";
                 for ($i = 0; $i != 4; $i++) {
                     for ($j = 0; $j != 4; $j++) {
                         $str .= ($array[$j][$i] . " ");
                     }
                 }
-                print $str; */
+
+                $gameID = intval($PDO->query("select count(*) from games")->fetch(PDO::FETCH_ASSOC)['count(*)']) + 1;
+
+                $sql = "insert into games(id, board, players, expiry) values (:id, :board, :players, :expiry)";
+                $create = $PDO->prepare($sql);
+                $create->bindParam(':id', $gameID);
+                $create->bindParam(':board', $str);
+                $players = $username . "-" . strtotime("now"). "-{end}-{moves} "
+                            . $challenged . "-{start}-{end}-{moves}";
+                $create->bindParam(':players', $players);
+                $expiry = strtotime("+ 1 day");
+                $create->bindParam(':expiry', $expiry);
+                $create->execute();
+
+                $sql = "select games from users where username=:username";
+                $hostQuery = $PDO->prepare($sql);
+                $hostQuery->bindParam(':username', $username);
+                $hostQuery->execute();
+                $hostGames = $hostQuery->fetch(PDO::FETCH_ASSOC)['games'];
+
+                $hostGames = $hostGames == "" ? $gameID : $hostGames . "-" . $gameID;
+
+                $sql = "update users set games=:games where username=:username";
+                $updateHost = $PDO->prepare($sql);
+                $updateHost->bindParam(':games', $hostGames);
+                $updateHost->bindParam(':username', $username);
+                $updateHost->execute();
+
+                $sql = "select games from users where username=:challenged";
+                $challengedQuery = $PDO->prepare($sql);
+                $challengedQuery->bindParam(':challenged', $challenged);
+                $challengedQuery->execute();
+                $challengedGames = $challengedQuery->fetch(PDO::FETCH_ASSOC)['games'];
+
+                $challengedGames = $challengedGames == "" ? $gameID : $challengedGames . "-" . $gameID;
+
+                $sql = "update users set games=:games where username=:challenged";
+                $updateChallenged = $PDO->prepare($sql);
+                $updateChallenged->bindParam(':games', $challengedGames);
+                $updateChallenged->bindParam(':challenged', $challenged);
+                $updateChallenged->execute();
+
+                print $str;
             } else {
                 print 'false - invalid invitation';
             }
