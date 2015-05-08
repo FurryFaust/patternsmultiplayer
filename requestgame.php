@@ -1,16 +1,11 @@
 <?php
 
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
-error_reporting(-1);
-
 $username = $_GET['username'];
 $password = $_GET['password'];
 $challenged = $_GET['challenged'];
 $difficulty = $_GET['difficulty'];
 
-function checkValidity($str)
-{
+function checkValidity($str) {
     if (!empty($str)) {
         if (strlen($str) > 5 && strlen($str) < 16) {
             return true;
