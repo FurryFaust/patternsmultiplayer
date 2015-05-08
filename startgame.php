@@ -34,7 +34,7 @@ if(checkValidity($username) && checkValidity($password)) {
                     if (strpos($player, "{start}") !== false) {
                         $players = str_replace("{start}", strtotime("now"), $results['players']);
                         $PDO->query("update games set players='" . $players . "' where id=" . $gameID);
-                        print 'true';
+                        print 'true - {' . $results['board'] . "}";
                     } else {
                         print 'false - game already started';
                     }
@@ -42,10 +42,6 @@ if(checkValidity($username) && checkValidity($password)) {
                     print 'false - invalid game id';
                 }
             } else {
-                print "Expiry: " . $results['expiry'];
-                print "<br>";
-                print "Now: " . strtotime("now");
-                print "<br>";
                 print 'false - expired game';
             }
         } else {
