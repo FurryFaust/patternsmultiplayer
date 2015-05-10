@@ -31,11 +31,8 @@ if (checkValidity($username) && checkValidity($password)) {
         if ($result = $gameQuery->fetch(PDO::FETCH_ASSOC)) {
             if (intval(strtotime("now")) < intval($result['expiry'])) {
                 if (strpos($result['players'], $username) !== false) {
-                    preg_match('#' . $username . '-\d+-{end}-{moves}#', $result['players'], $matches, PREG_OFFSET_CAPTURE))
-                    if (!empty($matches)) {
-                        preg_match("# #", $result['players'], $white, PREG_OFFSET_CAPTURE);
-                        $boardStr = explode(" ", $result['board']);
-                        $space = $white[0][1];
+                    preg_match('#' . $username . '-\d+-{end}-{moves}#', $result['players'], $index, PREG_OFFSET_CAPTURE);
+                    if (!empty($index)) {
                         $board = [
                             [$boardStr[0], $boardStr[1], $boardStr[2], $boardStr[3]],
                             [$boardStr[4], $boardStr[5], $boardStr[6], $boardStr[7]],
@@ -99,7 +96,7 @@ if (checkValidity($username) && checkValidity($password)) {
 
                         $winningBoard = [
                             [1, 2, 3, 4],
-                            [12, 13,14, 5],
+                            [12, 13, 14, 5],
                             [11, 0, 15, 6],
                             [10, 9, 8, 7]
                         ];
@@ -107,7 +104,7 @@ if (checkValidity($username) && checkValidity($password)) {
                         function check($board, $winningBoard) {
                             for ($i = 0; $i != 4; $i++) {
                                 for ($j = 0; $j != 4; $j++) {
-                                    if ($board[i][j] != $winningBoard[i][j]) {
+                                    if ($board[$i][$j] != $winningBoard[$i][$j]) {
                                         return false;
                                     }
                                 }
@@ -116,9 +113,19 @@ if (checkValidity($username) && checkValidity($password)) {
                         }
 
                         if (check($board, $winningBoard)) {
+                            $players = explode(" ", $result['players']);
+                            $player = $index[0][1] == 0 ? $players[0] : $players[1];
+                            $player = str_replace("{end}", strtotime("now"), $player);
+                            $player = str_replace("{moves}", sizeof(explode("|", $moves)), $player);
+                            $players = str_replace($index[0][0], $player, $result['players']);
+                            $sql = "update games set players='" . $players . "' where id=:id";
+                            $update = $PDO->prepare($sql);
+                            $update->bindParam(':id', $gameID);
+                            $update->execute();
                             print 'true';
+                        } else {
+                            print 'false - fake request';
                         }
-
                     } else {
                         print 'false - game already submitted';
                     }
