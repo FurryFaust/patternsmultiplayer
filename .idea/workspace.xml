@@ -56,17 +56,17 @@
       <file leaf-file-name="requestgame.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requestgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2154067" vertical-offset="2359" max-vertical-offset="3060">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.6205421" vertical-offset="0" max-vertical-offset="3060">
+              <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
               <folding>
-                <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-                <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-                <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-                <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-                <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-                <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-                <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-                <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+                <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+                <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+                <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+                <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+                <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+                <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+                <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+                <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
               </folding>
             </state>
           </provider>
@@ -75,7 +75,7 @@
       <file leaf-file-name="submitgame.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/submitgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="2280">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2280">
               <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <marker date="1431227504000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
@@ -137,12 +137,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/startgame.php" />
-        <option value="$PROJECT_DIR$/requestgame.php" />
         <option value="$PROJECT_DIR$/submitgame.php" />
         <option value="$PROJECT_DIR$/createaccount.php" />
         <option value="$PROJECT_DIR$/script.py" />
         <option value="$PROJECT_DIR$/auth.php" />
+        <option value="$PROJECT_DIR$/startgame.php" />
+        <option value="$PROJECT_DIR$/requestgame.php" />
       </list>
     </option>
   </component>
@@ -447,12 +447,12 @@
       <workItem from="1431037682714" duration="24000" />
       <workItem from="1431037720226" duration="23045000" />
       <workItem from="1431231709217" duration="632000" />
-      <workItem from="1431232771596" duration="348000" />
+      <workItem from="1431232771596" duration="547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24049000" />
+    <option name="totallyTimeSpent" value="24248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -534,14 +534,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="808" max-vertical-offset="3060">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -609,14 +609,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="808" max-vertical-offset="3060">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -670,14 +670,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -716,14 +716,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -765,14 +765,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -811,14 +811,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -857,14 +857,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -903,14 +903,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -949,14 +949,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -987,14 +987,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -1025,14 +1025,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -1077,29 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submitgame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="2280">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1431227504000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-            <marker date="1431227504000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-            <marker date="1431227504000" expanded="true" signature="5604:5629" placeholder="update games..." />
-            <marker date="1431227504000" expanded="true" signature="5604:5630" placeholder="update games..." />
-            <marker date="1431227504000" expanded="true" signature="5604:5656" placeholder="update games..." />
-            <marker date="1431227504000" expanded="true" signature="5604:5660" placeholder="update games..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="540">
@@ -1124,19 +1101,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/submitgame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="2280">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1431227504000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+            <marker date="1431227504000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+            <marker date="1431227504000" expanded="true" signature="5604:5629" placeholder="update games..." />
+            <marker date="1431227504000" expanded="true" signature="5604:5630" placeholder="update games..." />
+            <marker date="1431227504000" expanded="true" signature="5604:5656" placeholder="update games..." />
+            <marker date="1431227504000" expanded="true" signature="5604:5660" placeholder="update games..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requestgame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2154067" vertical-offset="2359" max-vertical-offset="3060">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.6205421" vertical-offset="0" max-vertical-offset="3060">
+          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
           <folding>
-            <marker date="1431227496000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431227496000" expanded="true" signature="5923:5949" placeholder="select count..games..." />
-            <marker date="1431227496000" expanded="true" signature="6020:6105" placeholder="insert into ..." />
-            <marker date="1431227496000" expanded="true" signature="6633:6681" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7023:7077" placeholder="update users..." />
-            <marker date="1431227496000" expanded="true" signature="7322:7372" placeholder="select games..users..." />
-            <marker date="1431227496000" expanded="true" signature="7766:7822" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431323520000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431323520000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431323520000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431323520000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431323520000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
