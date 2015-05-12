@@ -30,7 +30,15 @@ if (checkValidity($username) && checkValidity($password)) {
 
             if($result = $query->fetch(PDO::FETCH_ASSOC)) {
                 print $result['players'] . " " . $result['expiry'];
+            } else {
+                print 'false - invalid game id';
             }
+        } else {
+            print 'false - invalid game authority';
         }
+    } else {
+        print 'false - invalid credentials';
     }
+} else {
+    print 'false - invalid credentials length';
 }
