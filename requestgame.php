@@ -27,7 +27,7 @@ if ($difficulty == "0" || $difficulty == "1") {
             $query = $PDO->prepare($sql);
             $query->bindParam(':challenged', $challenged);
             $query->execute();
-            if ($result = $query->fetch(PDO::FETCH_ASSOC) || $username == $challenged) {
+            if ($result = $query->fetch(PDO::FETCH_ASSOC) && $username != $challenged) {
                 for ($i = 0; $i != 4; $i++) {
                     for ($j = 0; $j != 4; $j++) {
                         $array[$i][$j] = 0;
