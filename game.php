@@ -20,21 +20,27 @@ if (checkValidity($username) && checkValidity($password)) {
     $auth->bindParam(':username', $username);
     $auth->bindParam(':password', $password);
     $auth->execute();
-
     if ($result = $auth->fetch(PDO::FETCH_ASSOC)) {
-        if (strpos($result['games'], $gameid) !== false) {
-            $sql = "select * from games where id=:gameid";
-            $query = $PDO->prepare($sql);
-            $query->bindParam(':gameid', $gameid);
-            $query->execute();
+        $ids = explode(",", $gameid);
 
-            if($result = $query->fetch(PDO::FETCH_ASSOC)) {
-                print $result['players'] . " " . $result['expiry'];
+        foreach ($ids as $id) {
+            if (strpos($result['games'], $id) !== false) {
+                $sql = "select * from games where id=:gameid";
+                $query = $PDO->prepare($sql);
+                $query->bindParam(':gameid', $id);
+                $query->execute();
+
+                if ($games = $query->fetch(PDO::FETCH_ASSOC)) {
+                    print $games['players'] . "|" . $games['expiry'];
+                    print '~';
+                } else {
+                    print 'false - invalid game id';
+                    break;
+                }
             } else {
-                print 'false - invalid game id';
+                print 'false - invalid game authority';
+                break;
             }
-        } else {
-            print 'false - invalid game authority';
         }
     } else {
         print 'false - invalid credentials';
