@@ -31,8 +31,8 @@ if (checkValidity($username) && checkValidity($password)) {
                 $query->execute();
 
                 if ($games = $query->fetch(PDO::FETCH_ASSOC)) {
-                    print $games['players'] . "|" . $games['expiry'];
-                    print '~';
+                    print $id . "|" . $games['players'] . "|" . $games['expiry'];
+                    print '<br>';
                 } else {
                     print 'false - invalid game id';
                     break;
