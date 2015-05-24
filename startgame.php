@@ -34,7 +34,7 @@ if(checkValidity($username) && checkValidity($password)) {
                     if (strpos($player, "{start}") !== false) {
                         $players = str_replace("{start}", strtotime("now"), $results['players']);
                         $PDO->query("update games set players='" . $players . "' where id=" . $gameID);
-                        print 'true - {' . $results['board'] . "}";
+                        print 'true - ' . $results['board'];
                     } else {
                         print 'false - game already started';
                     }
