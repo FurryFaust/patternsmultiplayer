@@ -5,7 +5,8 @@ $password = $_GET['password'];
 $gameID = $_GET['gameid'];
 $moves = $_GET['moves'];
 
-function checkValidity($str) {
+function checkValidity($str)
+{
     if (!empty($str)) {
         if (strlen($str) > 5 && strlen($str) < 16) {
             return true;
@@ -33,6 +34,7 @@ if (checkValidity($username) && checkValidity($password)) {
                 if (strpos($result['players'], $username) !== false) {
                     preg_match('#' . $username . '-\d+-{end}-{moves}#', $result['players'], $index, PREG_OFFSET_CAPTURE);
                     if (!empty($index)) {
+                        $boardStr = explode(" ", $result['board']);
                         $board = [
                             [$boardStr[0], $boardStr[1], $boardStr[2], $boardStr[3]],
                             [$boardStr[4], $boardStr[5], $boardStr[6], $boardStr[7]],
@@ -40,7 +42,8 @@ if (checkValidity($username) && checkValidity($password)) {
                             [$boardStr[12], $boardStr[13], $boardStr[14], $boardStr[15]]
                         ];
 
-                        function getEmptySlotX($array) {
+                        function getEmptySlotX($array)
+                        {
                             for ($i = 0; $i != 4; $i++) {
                                 for ($j = 0; $j != 4; $j++) {
                                     if ($array[$i][$j] == 0) {
@@ -51,7 +54,8 @@ if (checkValidity($username) && checkValidity($password)) {
                             return 0;
                         }
 
-                        function getEmptySlotY($array) {
+                        function getEmptySlotY($array)
+                        {
                             for ($i = 0; $i != 4; $i++) {
                                 for ($j = 0; $j != 4; $j++) {
                                     if ($array[$i][$j] == 0) {
@@ -62,35 +66,37 @@ if (checkValidity($username) && checkValidity($password)) {
                             return 0;
                         }
 
-                        $moves = explode("|", $moves);
-                        for ($i = 0; $i != sizeof($moves); $i++) {
-                            $emptyX = getEmptySlotX($board);
-                            $emptyY = getEmptySlotX($board);
-                            switch (intval($moves[$i])) {
-                                case 0:
-                                    if ($emptyY != 3) {
-                                        $board[$emptyX][$emptyY] = $board[$emptyX][$emptyY + 1];
-                                        $board[$emptyX][$emptyY + 1] = 0;
-                                    }
-                                    break;
-                                case 1:
-                                    if ($emptyY != 0) {
-                                        $board[$emptyX][$emptyY] = $board[$emptyX][$emptyY - 1];
-                                        $board[$emptyX][$emptyY - 1] = 0;
-                                    }
-                                    break;
-                                case 2:
-                                    if ($emptyX != 0) {
-                                        $board[$emptyX][$emptyY] = $board[$emptyX - 1][$emptyY];
-                                        $board[$emptyX - 1][$emptyY] = 0;
-                                    }
-                                    break;
-                                case 3:
-                                    if ($emptyX != 3) {
-                                        $board[$emptyX][$emptyY] = $board[$emptyX + 1][$emptyY];
-                                        $board[$emptyX + 1][$emptyY] = 0;
-                                    }
-                                    break;
+                        if ($moves !== "") {
+                            $moves = explode("|", $moves);
+                            for ($i = 0; $i != sizeof($moves); $i++) {
+                                $emptyX = getEmptySlotX($board);
+                                $emptyY = getEmptySlotY($board);
+                                switch (intval($moves[$i])) {
+                                    case 3:
+                                        if ($emptyY != 3) {
+                                            $board[$emptyX][$emptyY] = $board[$emptyX][$emptyY + 1];
+                                            $board[$emptyX][$emptyY + 1] = 0;
+                                        }
+                                        break;
+                                    case 2:
+                                        if ($emptyY != 0) {
+                                            $board[$emptyX][$emptyY] = $board[$emptyX][$emptyY - 1];
+                                            $board[$emptyX][$emptyY - 1] = 0;
+                                        }
+                                        break;
+                                    case 1:
+                                        if ($emptyX != 0) {
+                                            $board[$emptyX][$emptyY] = $board[$emptyX - 1][$emptyY];
+                                            $board[$emptyX - 1][$emptyY] = 0;
+                                        }
+                                        break;
+                                    case 0:
+                                        if ($emptyX != 3) {
+                                            $board[$emptyX][$emptyY] = $board[$emptyX + 1][$emptyY];
+                                            $board[$emptyX + 1][$emptyY] = 0;
+                                        }
+                                        break;
+                                }
                             }
                         }
 
@@ -101,7 +107,26 @@ if (checkValidity($username) && checkValidity($password)) {
                             [10, 9, 8, 7]
                         ];
 
-                        function check($board, $winningBoard) {
+                        print "<br>";
+
+                        for ($i = 0; $i != 4; $i++) {
+                            for ($j = 0; $j != 4; $j++) {
+                                print (string)$winningBoard[$i][$j] . ($winningBoard[$i][$j] > 9 ? " " : "  ");
+                            }
+                            print "<br>";
+                        }
+
+                        print "<br>";
+
+                        for ($i = 0; $i != 4; $i++) {
+                            for ($j = 0; $j != 4; $j++) {
+                                print (string)$board[$i][$j] . ($board[$i][$j] > 9 ? " " : "  ");
+                            }
+                            print "<br>";
+                        }
+
+                        function check($board, $winningBoard)
+                        {
                             for ($i = 0; $i != 4; $i++) {
                                 for ($j = 0; $j != 4; $j++) {
                                     if ($board[$i][$j] != $winningBoard[$i][$j]) {
@@ -116,7 +141,7 @@ if (checkValidity($username) && checkValidity($password)) {
                             $players = explode(" ", $result['players']);
                             $player = $index[0][1] == 0 ? $players[0] : $players[1];
                             $player = str_replace("{end}", strtotime("now"), $player);
-                            $player = str_replace("{moves}", sizeof(explode("|", $moves)), $player);
+                            $player = str_replace("{moves}", count($moves), $player);
                             $players = str_replace($index[0][0], $player, $result['players']);
                             $sql = "update games set players='" . $players . "' where id=:id";
                             $update = $PDO->prepare($sql);

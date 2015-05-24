@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c1c2051-8c95-400f-a007-c4aceb6f6284" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startgame.php" afterPath="$PROJECT_DIR$/startgame.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/submitgame.php" afterPath="$PROJECT_DIR$/submitgame.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Patterns Multiplayer.iws" />
@@ -43,12 +43,12 @@
       <file leaf-file-name="startgame.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="915">
-              <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+            <state vertical-scroll-proportion="-2.5" vertical-offset="180" max-vertical-offset="915">
+              <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
               <folding>
-                <marker date="1432437420000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
-                <marker date="1432437420000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
-                <marker date="1432437420000" expanded="true" signature="1341:1394" placeholder="update games..." />
+                <marker date="1432478404000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
+                <marker date="1432478404000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
+                <marker date="1432478404000" expanded="true" signature="1341:1394" placeholder="update games..." />
               </folding>
             </state>
           </provider>
@@ -57,7 +57,7 @@
       <file leaf-file-name="game.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="825">
+            <state vertical-scroll-proportion="-25.458334" vertical-offset="124" max-vertical-offset="825">
               <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding>
                 <marker date="1431683422000" expanded="true" signature="419:486" placeholder="select * fro..users..." />
@@ -70,12 +70,12 @@
       <file leaf-file-name="submitgame.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/submitgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38516405" vertical-offset="0" max-vertical-offset="2280">
-              <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.40656206" vertical-offset="0" max-vertical-offset="2655">
+              <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
               <folding>
-                <marker date="1431425097000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-                <marker date="1431425097000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-                <marker date="1431425097000" expanded="true" signature="5604:5660" placeholder="update games..." />
+                <marker date="1432494860000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+                <marker date="1432494860000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+                <marker date="1432494860000" expanded="true" signature="6634:6690" placeholder="update games..." />
               </folding>
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="requestgame.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requestgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3060">
+            <state vertical-scroll-proportion="-4.375" vertical-offset="165" max-vertical-offset="3060">
               <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
               <folding>
                 <marker date="1431425379000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
@@ -160,13 +160,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/submitgame.php" />
         <option value="$PROJECT_DIR$/requestgame.php" />
         <option value="$PROJECT_DIR$/auth.php" />
         <option value="$PROJECT_DIR$/createaccount.php" />
         <option value="$PROJECT_DIR$/games.php" />
         <option value="$PROJECT_DIR$/game.php" />
         <option value="$PROJECT_DIR$/startgame.php" />
+        <option value="$PROJECT_DIR$/submitgame.php" />
       </list>
     </option>
   </component>
@@ -241,6 +241,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="format code&#9;ACTION&#9;ReformatCode" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -511,12 +512,12 @@
       <workItem from="1431478282487" duration="137000" />
       <workItem from="1431556438802" duration="4240000" />
       <workItem from="1431746700849" duration="9000" />
-      <workItem from="1432428140108" duration="2043000" />
+      <workItem from="1432428140108" duration="7914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8451000" />
+    <option name="totallyTimeSpent" value="14322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -586,9 +587,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="915">
           <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <marker date="1432437420000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
-            <marker date="1432437420000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
-            <marker date="1432437420000" expanded="true" signature="1341:1394" placeholder="update games..." />
+            <marker date="1432478404000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
+            <marker date="1432478404000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
+            <marker date="1432478404000" expanded="true" signature="1341:1394" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -609,9 +610,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431425097000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-            <marker date="1431425097000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-            <marker date="1431425097000" expanded="true" signature="5604:5660" placeholder="update games..." />
+            <marker date="1432494860000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+            <marker date="1432494860000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+            <marker date="1432494860000" expanded="true" signature="6634:6690" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -677,9 +678,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="915">
           <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <marker date="1432437420000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
-            <marker date="1432437420000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
-            <marker date="1432437420000" expanded="true" signature="1341:1394" placeholder="update games..." />
+            <marker date="1432478404000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
+            <marker date="1432478404000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
+            <marker date="1432478404000" expanded="true" signature="1341:1394" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -700,9 +701,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431425097000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-            <marker date="1431425097000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-            <marker date="1431425097000" expanded="true" signature="5604:5660" placeholder="update games..." />
+            <marker date="1432494860000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+            <marker date="1432494860000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+            <marker date="1432494860000" expanded="true" signature="6634:6690" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -768,9 +769,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="915">
           <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <marker date="1432437420000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
-            <marker date="1432437420000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
-            <marker date="1432437420000" expanded="true" signature="1341:1394" placeholder="update games..." />
+            <marker date="1432478404000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
+            <marker date="1432478404000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
+            <marker date="1432478404000" expanded="true" signature="1341:1394" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -791,9 +792,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2280">
           <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
           <folding>
-            <marker date="1431425097000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-            <marker date="1431425097000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-            <marker date="1431425097000" expanded="true" signature="5604:5660" placeholder="update games..." />
+            <marker date="1432494860000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+            <marker date="1432494860000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+            <marker date="1432494860000" expanded="true" signature="6634:6690" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -859,9 +860,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="915">
           <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <marker date="1432437420000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
-            <marker date="1432437420000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
-            <marker date="1432437420000" expanded="true" signature="1341:1394" placeholder="update games..." />
+            <marker date="1432478404000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
+            <marker date="1432478404000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
+            <marker date="1432478404000" expanded="true" signature="1341:1394" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -882,9 +883,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2280">
           <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
           <folding>
-            <marker date="1431425097000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-            <marker date="1431425097000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-            <marker date="1431425097000" expanded="true" signature="5604:5660" placeholder="update games..." />
+            <marker date="1432494860000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+            <marker date="1432494860000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+            <marker date="1432494860000" expanded="true" signature="6634:6690" placeholder="update games..." />
           </folding>
         </state>
       </provider>
@@ -954,23 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requestgame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3060">
-          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-          <folding>
-            <marker date="1431425379000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
-            <marker date="1431425379000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
-            <marker date="1431425379000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
-            <marker date="1431425379000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
-            <marker date="1431425379000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
-            <marker date="1431425379000" expanded="true" signature="7051:7105" placeholder="update users..." />
-            <marker date="1431425379000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
-            <marker date="1431425379000" expanded="true" signature="7794:7850" placeholder="update users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="540">
@@ -993,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="825">
+        <state vertical-scroll-proportion="-25.458334" vertical-offset="124" max-vertical-offset="825">
           <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding>
             <marker date="1431683422000" expanded="true" signature="419:486" placeholder="select * fro..users..." />
@@ -1004,24 +988,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/startgame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="915">
-          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        <state vertical-scroll-proportion="-2.5" vertical-offset="180" max-vertical-offset="915">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <marker date="1432437420000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
-            <marker date="1432437420000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
-            <marker date="1432437420000" expanded="true" signature="1341:1394" placeholder="update games..." />
+            <marker date="1432478404000" expanded="true" signature="418:485" placeholder="select * fro..users..." />
+            <marker date="1432478404000" expanded="true" signature="705:741" placeholder="select * fro..games..." />
+            <marker date="1432478404000" expanded="true" signature="1341:1394" placeholder="update games..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requestgame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="165" max-vertical-offset="3060">
+          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+          <folding>
+            <marker date="1431425379000" expanded="true" signature="522:589" placeholder="select * fro..users..." />
+            <marker date="1431425379000" expanded="true" signature="831:877" placeholder="select * fro..users..." />
+            <marker date="1431425379000" expanded="true" signature="5951:5977" placeholder="select count..games..." />
+            <marker date="1431425379000" expanded="true" signature="6048:6133" placeholder="insert into ..." />
+            <marker date="1431425379000" expanded="true" signature="6661:6709" placeholder="select games..users..." />
+            <marker date="1431425379000" expanded="true" signature="7051:7105" placeholder="update users..." />
+            <marker date="1431425379000" expanded="true" signature="7350:7400" placeholder="select games..users..." />
+            <marker date="1431425379000" expanded="true" signature="7794:7850" placeholder="update users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/submitgame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38516405" vertical-offset="0" max-vertical-offset="2280">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.40656206" vertical-offset="0" max-vertical-offset="2655">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
           <folding>
-            <marker date="1431425097000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
-            <marker date="1431425097000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
-            <marker date="1431425097000" expanded="true" signature="5604:5660" placeholder="update games..." />
+            <marker date="1432494860000" expanded="true" signature="445:512" placeholder="select * fro..users..." />
+            <marker date="1432494860000" expanded="true" signature="731:763" placeholder="select * fro..games..." />
+            <marker date="1432494860000" expanded="true" signature="6634:6690" placeholder="update games..." />
           </folding>
         </state>
       </provider>
