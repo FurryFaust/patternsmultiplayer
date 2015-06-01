@@ -107,24 +107,6 @@ if (checkValidity($username) && checkValidity($password)) {
                             [10, 9, 8, 7]
                         ];
 
-                        print "<br>";
-
-                        for ($i = 0; $i != 4; $i++) {
-                            for ($j = 0; $j != 4; $j++) {
-                                print (string)$winningBoard[$i][$j] . ($winningBoard[$i][$j] > 9 ? " " : "  ");
-                            }
-                            print "<br>";
-                        }
-
-                        print "<br>";
-
-                        for ($i = 0; $i != 4; $i++) {
-                            for ($j = 0; $j != 4; $j++) {
-                                print (string)$board[$i][$j] . ($board[$i][$j] > 9 ? " " : "  ");
-                            }
-                            print "<br>";
-                        }
-
                         function check($board, $winningBoard)
                         {
                             for ($i = 0; $i != 4; $i++) {

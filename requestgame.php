@@ -183,7 +183,7 @@ if ($difficulty == "0" || $difficulty == "1") {
                 $updateChallenged->bindParam(':challenged', $challenged);
                 $updateChallenged->execute();
 
-                print $str;
+                print $gameID . "|" . $str;
             } else {
                 print 'false - invalid invitation';
             }
