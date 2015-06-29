@@ -14,14 +14,19 @@ function checkValidity($str) {
 
 if(checkValidity($username) && checkValidity($password)) {
     $PDO = new PDO('mysql:host=localhost;dbname=patterns', 'root', 'password');
-    $sql = "select * from users where username=:username and password=:password";
+    $sql = "select * from users where username=:username";
     $auth = $PDO->prepare($sql);
     $auth->bindParam(':username', $username);
-    $auth->bindParam(':password', $password);
     $auth->execute();
 
     if ($result = $auth->fetch(PDO::FETCH_ASSOC)) {
-        print $result['games'];
+
+        $salt = $result['salt'];
+        $encrypt = $result['password'];
+
+        if (md5($password . $salt) == $encrypt) {
+            print $result['games'];
+        }
     } else {
         print 'false - invalid credentials';
     }

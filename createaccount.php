@@ -22,10 +22,15 @@ if(checkValidity($username) && checkValidity($password)) {
     if ($result = $check->fetch(PDO::FETCH_ASSOC)) {
         print 'false - username unavailable';
     } else {
-        $sql = "insert into users(username, password) values (:username, :password)";
+        $sql = "insert into users(username, password, salt) values (:username, :password, :salt)";
+        
+        $salt = sha1(md5($password));
+        $password = md5($password . $salt);
+
         $create = $PDO->prepare($sql);
         $create->bindParam(':username', $username);
         $create->bindParam(':password', $password);
+        $create->bindParam(':salt', $salt);
         $create->execute();
         print 'true';
     }

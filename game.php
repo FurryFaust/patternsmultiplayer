@@ -15,32 +15,40 @@ function checkValidity($str) {
 
 if (checkValidity($username) && checkValidity($password)) {
     $PDO = new PDO('mysql:host=localhost;dbname=patterns', 'root', 'password');
-    $sql = "select * from users where username=:username and password=:password";
+    $sql = "select * from users where username=:username";
     $auth = $PDO->prepare($sql);
     $auth->bindParam(':username', $username);
-    $auth->bindParam(':password', $password);
     $auth->execute();
+
     if ($result = $auth->fetch(PDO::FETCH_ASSOC)) {
-        $ids = explode(",", $gameid);
 
-        foreach ($ids as $id) {
-            if (strpos($result['games'], $id) !== false) {
-                $sql = "select * from games where id=:gameid";
-                $query = $PDO->prepare($sql);
-                $query->bindParam(':gameid', $id);
-                $query->execute();
+        $salt = $result['salt'];
+        $encrypt = $result['password'];
 
-                if ($games = $query->fetch(PDO::FETCH_ASSOC)) {
-                    print $id . "|" . $games['players'] . "|" . $games['expiry'];
-                    print '<br>';
+        if (md5($password . $salt) == $encrypt) {
+            $ids = explode(",", $gameid);
+
+            foreach ($ids as $id) {
+                if (strpos($result['games'], $id) !== false) {
+                    $sql = "select * from games where id=:gameid";
+                    $query = $PDO->prepare($sql);
+                    $query->bindParam(':gameid', $id);
+                    $query->execute();
+
+                    if ($games = $query->fetch(PDO::FETCH_ASSOC)) {
+                        print $id . "|" . $games['players'] . "|" . $games['expiry'];
+                        print '<br>';
+                    } else {
+                        print 'false - invalid game id';
+                        break;
+                    }
                 } else {
-                    print 'false - invalid game id';
+                    print 'false - invalid game authority';
                     break;
                 }
-            } else {
-                print 'false - invalid game authority';
-                break;
             }
+        } else {
+            print 'false - invalid credentials';
         }
     } else {
         print 'false - invalid credentials';

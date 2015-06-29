@@ -15,37 +15,42 @@ function checkValidity($str) {
 
 if(checkValidity($username) && checkValidity($password)) {
     $PDO = new PDO('mysql:host=localhost;dbname=patterns', 'root', 'password');
-    $sql = "select * from users where username=:username and password=:password";
+    $sql = "select * from users where username=:username";
     $auth = $PDO->prepare($sql);
     $auth->bindParam(':username', $username);
-    $auth->bindParam(':password', $password);
     $auth->execute();
 
     if ($results = $auth->fetch(PDO::FETCH_ASSOC)) {
-        $sql = "select * from games where id=:gameID";
-        $queryGame = $PDO->prepare($sql);
-        $queryGame->bindParam(':gameID', $gameID);
-        $queryGame->execute();
 
-        if ($results = $queryGame->fetch(PDO::FETCH_ASSOC)) {
-            if (intval(strtotime("now")) < intval($results['expiry'])) {
-                $player = explode(" ", $results['players'])[1];
-                if (substr($player, 0, strlen($username)) == $username) {
-                    if (strpos($player, "{start}") !== false) {
-                        $players = str_replace("{start}", strtotime("now"), $results['players']);
-                        $PDO->query("update games set players='" . $players . "' where id=" . $gameID);
-                        print $results['board'];
+        $salt = $results['salt'];
+        $encrypt = $results['password'];
+
+        if (md5($password . $salt) == $encrypt) {
+            $sql = "select * from games where id=:gameID";
+            $queryGame = $PDO->prepare($sql);
+            $queryGame->bindParam(':gameID', $gameID);
+            $queryGame->execute();
+
+            if ($results = $queryGame->fetch(PDO::FETCH_ASSOC)) {
+                if (intval(strtotime("now")) < intval($results['expiry'])) {
+                    $player = explode(" ", $results['players'])[1];
+                    if (substr($player, 0, strlen($username)) == $username) {
+                        if (strpos($player, "{start}") !== false) {
+                            $players = str_replace("{start}", strtotime("now"), $results['players']);
+                            $PDO->query("update games set players='" . $players . "' where id=" . $gameID);
+                            print $results['board'];
+                        } else {
+                            print 'false - game already started';
+                        }
                     } else {
-                        print 'false - game already started';
+                        print 'false - invalid game id';
                     }
                 } else {
-                    print 'false - invalid game id';
+                    print 'false - expired game';
                 }
             } else {
-                print 'false - expired game';
+                print 'false - invalid game id';
             }
-        } else {
-            print 'false - invalid game id';
         }
     } else {
         print 'false - invalid credential';
